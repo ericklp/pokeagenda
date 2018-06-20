@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="max.com.br.loginexample.PesquisarActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nomePokePesqEt"
+        android:layout_alignBottom="@+id/nomePokePesqEt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="10dp"
+        android:text="Nome Pokemon:" />
+
+    <EditText
+        android:id="@+id/nomePokePesqEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="Charmander"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nomePokePesqEt"
+        android:layout_alignStart="@+id/nomePokePesqEt"
+        android:layout_below="@+id/nomePokePesqEt"
+        android:layout_marginTop="65dp"
+        android:onClick="pesquisar"
+        android:text="Pesquisar" />
+</android.widget.RelativeLayout>
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="max.com.br.loginexample.CadastrarActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="?attr/actionBarSize">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/nomePokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:" />
+
+            <EditText
+                android:id="@+id/nomePokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Charmander"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/especiePokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espécie:" />
+
+            <EditText
+                android:id="@+id/especiePokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/pesoPokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso" />
+
+            <EditText
+                android:id="@+id/pesoPokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/alturaPokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura:" />
+
+            <EditText
+                android:id="@+id/alturaPokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Imagem:" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="dispatchTakePictureIntent"
+                app:srcCompat="@drawable/ic_menu_camera" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/buttonInserir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="cadastrarPokemon"
+                android:text="Inserir" />
+        </TableRow>
+    </TableLayout>
+
+
+
+</android.widget.RelativeLayout>

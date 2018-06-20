@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginExample</string>
+    <string name="title_activity_cadastrar">CadastrarActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_initial">initial</string>
+    <string name="title_activity_consultar">ConsultarActivity</string>
+    <string name="title_activity_cadastrar_nav">CadastrarNavActivity</string>
+    <string name="title_activity_pesquisar_nav">PesquisarNavActivity</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="max.com.br.loginexample.ExibirPokemonActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:id="@+id/imagemPokemon"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_menu_camera" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nomePokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome:" />
+
+            <EditText
+                android:id="@+id/nomePokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="Charmander"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/especiePokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espécie:" />
+
+            <EditText
+                android:id="@+id/especiePokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/pesoPokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peso" />
+
+            <EditText
+                android:id="@+id/pesoPokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/alturaPokemonTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Altura:" />
+
+            <EditText
+                android:id="@+id/alturaPokemonEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/nomeTreinador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome Treinador:" />
+
+            <EditText
+                android:id="@+id/nomeTreinadorEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonPokeFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:onClick="escolherPokemonFavorito"
+        android:text="Escolher Pokemon Favorito" />
+
+
+</android.widget.RelativeLayout>
